@@ -18,6 +18,7 @@
     --border: rgb(238, 238, 238);
     --darkcolor: #6a7ba2;
     --lightcolor: #cbd1de;
+    --linkblue: #002aff;
     --semibold: 500;
     --homesize: 16px;
     --textsize: 18px;
@@ -25,9 +26,10 @@
     --entrysize: 15px;
     --headersize: 16px;
     --footersize: 13px;
-    --lineheight: 1.45;
+    --lineheight: 1.4;
     --lineclamp: 8;
     --marginleft: 26px;
+    --entryweight: 250;
 }
 
 .dark {

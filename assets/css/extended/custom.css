@@ -1,0 +1,107 @@
+/* 针对 PaperMod 的特殊修复 */
+.post-content a, 
+.post-summary a,
+.archive-entry a,
+.post-content a:hover {
+    text-decoration: none !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    color: var(--linkblue) !important;
+}
+
+
+
+/* 针对文章元信息（作者、日期、标签等）中的链接 */
+.post-meta a,
+.post-tags a,
+.parent-post-meta a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    /* color: var(--linkblue) !important; */
+}
+
+/* 鼠标悬停效果（可选） */
+.post-meta a:hover {
+    color: var(--linkblue) !important;
+    /* text-decoration: underline !important; */
+}
+
+
+
+/* 修改文章标题的颜色 */
+/* .first-entry .entry-header h2, 
+.post-entry .entry-header h2 {
+    color: #002aff !important;
+} */
+
+/* 鼠标悬停时的颜色 */
+.first-entry:hover .entry-header h2, 
+.post-entry:hover .entry-header h2 {
+    color: var(--linkblue) !important;
+}
+
+
+/* 导航栏鼠标悬停时的颜色 */
+body #menu li a:hover,
+body .menu a:hover {
+    color: var(--linkblue) !important;
+    /* font-weight: 800 !important;  */
+    /* 特粗，确保视觉明显 */
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+/* 内页正文字号 */
+.post-meta {
+    font-size: 16px;
+}
+.post-content {
+    font-size: 16px !important;
+}
+
+
+
+/* 创建导航栏下划线动画 */
+#menu a {
+    color: #888 !important;
+    transition: color 0.3s ease;
+    position: relative !important;
+    text-decoration: none !important;
+    line-height: 40px !important; /* 减小行高，这是缩减间距的关键 */
+    padding: 0 5px !important;    /* 左右留间距，上下设为0 */
+    margin-top: 5px !important;  /* 整体微调位置 */
+    margin-bottom: 5px !important;  /* 整体微调位置 */
+}
+#menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--linkblue);
+    transition: width 0.3s ease-in-out;
+}
+#menu a:hover::after {
+    width: 100% !important;
+}
+
+
+
+#menu .active {
+    color: #000 !important;
+    font-weight: 500;
+    text-decoration: none !important;
+    border-bottom: none !important; 
+}
+#menu .active:hover {
+    color: var(--linkblue) !important;
+}
+#menu .active:hover::after {
+    background-color: var(--linkblue) !important;
+}

@@ -1,8 +1,14 @@
 {{- $scratch := newScratch }}
 
 {{- if not .Date.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format "2006"))) }}
 {{- end }}
+
+{{- if .Params.source -}}
+  {{- $val := .Params.source | markdownify | safeHTML -}}
+  {{- $scratch.Add "meta" (slice (printf "<span> %s </span>" $val)) -}}
+{{- end -}}
+
 
 {{- if (.Param "ShowReadingTime") -}}
 {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
@@ -12,12 +18,15 @@
 {{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
 {{- end }}
 
-{{- if not (.Param "hideAuthor") -}}
-{{- with (partial "author.html" .) }}
-{{- $scratch.Add "meta" (slice .) }}
-{{- end }}
-{{- end }}
-
+{{/* 第一部分：输出日期、来源、字数等，用中点分隔 */}}
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;&middot;&nbsp;" | safeHTML -}}
+{{- end -}}
+
+{{/* 第二部分：换行后单独输出作者，这样它前面就不会有中点 */}}
+{{- if not (.Param "hideAuthor") -}}
+  {{- with (partial "author.html" .) -}}
+    <br>
+    <span style="color: black;">{{ . | markdownify | safeHTML }}</span>
+  {{- end -}}
 {{- end -}}

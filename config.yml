@@ -12,15 +12,24 @@ taxonomies:
 
 menu:
     main:
+        - name: Profile
+          url: profile/
+          weight: 2
         - name: Research
           url: research/
-          weight: 2
+          weight: 3
         - name: Talks
           url: talks/
-          weight: 3
-        - name: Teaching
-          url: teaching/
           weight: 4
+        # - name: Teaching
+        #   url: teaching/
+        #   weight: 5
+        - name: Teaching and Service
+          url: service/
+          weight: 6
+        - name: Contact
+          url: contact/
+          weight: 7
         # - name: Blog
         #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
         #   weight: 6
@@ -41,7 +50,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["reseach","talks","teaching"]
+    MainSections: ["profile","reseach","talks","teaching","service","contact"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -52,17 +61,27 @@ params:
     profileMode:
           enabled: true
           title: Xiaowei (Elliott) Zhang
-          subtitle: "Hi, I am a Ph.D. candidate in Information Systems (IS) at the School of Economics and Management, Tsinghua University, advised by Prof. Zhijie Lin. I am also a PG visiting student at HKUST Business School, advised by Prof. Jing Wang.  \n My research focuses on digital platforms and artificial intelligence."
-          imageUrl: "picture.jpeg"
+          subtitle: | 
+              Hi, welcome to my website 🥳!<br> <br> 
+              I am a Ph.D. candidate in Information Systems (IS) at the School of Economics and Management, Tsinghua University, advised by Prof. <a style="color:  var(--linkblue);" href="https://www.sem.tsinghua.edu.cn/info/1210/31859.htm"> Zhijie Lin</a>. 
+              I am also a PG visiting student at HKUST Business School, advised by Prof. <a style="color: var(--linkblue);" href="https://isom.hkust.edu.hk/faculty-and-staff/directory/jwang">Jing Wang</a>. 
+              My research focuses on digital platforms and artificial intelligence.
+          imageUrl: "avatar.png"
           imageWidth: 160
           imageHeight: 160
           buttons:
+            - name: Profile
+              url: profile/
             - name: Research
               url: research/
             - name: Talks
               url: talks/
-            - name: Teaching
-              url: teaching/
+            # - name: Teaching
+            #   url: teaching/
+            - name: Teaching and Service
+              url: service/
+            # - name: Contact
+            #   url: contact/
             # - name: Archive
             #   url: archive/
             # - name: Blog
@@ -70,13 +89,14 @@ params:
 
     socialIcons:
         - name: CV
-          url: cv.pdf
+          # url: cv.pdf
+          url: profile
         - name: Email
-          url: xw-zhang21@mails.tsinghua.edu.cn
+          url: contact/
         # - name: Zoom
         #   url: https://www.zoom.us/my/igelfeld
         - name: Location
-          url: location/
+          url: contact/
         # - name: Office Hours
         #   url: officehours/
         - name: LinkedIn
@@ -103,8 +123,9 @@ params:
         hiddenInSingle: true
     label:
       text: "Xiaowei (Elliott) Zhang"
-      icon: favicon.ico
-      iconHeight: 18
+      # icon: favicon.ico
+      icon: avatar.png
+      iconHeight: 20
 
 markup:
     goldmark:

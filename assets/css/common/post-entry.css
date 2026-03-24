@@ -58,8 +58,9 @@
 
 .entry-content {
     margin: 20px 10px;
-    color: var(--secondary);
+    color: var(--gray);
     font-size: var(--entrysize);
+    font-weight: var(--entryweight);
     line-height: var(--lineheight);
     overflow: hidden;
     display: -webkit-box;
