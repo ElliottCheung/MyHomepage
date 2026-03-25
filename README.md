@@ -95,11 +95,11 @@ This repository is licensed under the [MIT License](LICENSE.md).
 - [Louise Demoor's website](https://louisedemoor.github.io/website/) ([source code](https://github.com/louisedemoor/website))
 - [Giwon Bahg's website](https://giwonbahg.github.io) ([source code](https://github.com/giwonbahg/giwonbahg.github.io))
 - [Diego Araujo's website](https://daliego.github.io/portfolio-case-studies) ([source code](https://github.com/Daliego/portfolio-case-studies))
-- [Liam Powell's website](https://liampwl.com) ([source code](https://github.com/liampwl/liampwl.github.io))
+<!-- - [Liam Powell's website](https://liampwl.com) ([source code](https://github.com/liampwl/liampwl.github.io))  -->
 - [Anton Lundborg's website](https://www.arlundborg.com) ([source code](https://github.com/ARLundborg/web))
 - [Taeyoung Kim's website](https://tykim.me) ([source code](https://github.com/SangsChicom/tykim.github.io))
 - [Niladri Kal's website](https://niladrik.github.io) ([source code](https://github.com/niladrik/niladrik.github.io))
-- [Somjit Roy's website](https://roy-sr-007.github.io) ([source code](https://github.com/Roy-SR-007/roy-sr-007.github.io))
+<!-- - [Somjit Roy's website](https://roy-sr-007.github.io) ([source code](https://github.com/Roy-SR-007/roy-sr-007.github.io)) -->
 - [Momchil Tomov's website](https://momchiltomov.com)
 - [Arthur Douillard's website](https://arthurdouillard.com)
 - [Benjamin Hattemer's website](https://benjaminhattemer.com)

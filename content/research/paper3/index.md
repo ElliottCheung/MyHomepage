@@ -32,9 +32,8 @@ Large language models (LLMs) have exhibited memorable strategic behaviors in soc
 
 ##### Download
 
-+ [Paper and Appendix](werewolf.pdf)
-<!-- + [Online appendix](appendix_recommender.pdf) -->
-+ [Code and data](https://github.com/doslim/Evaluate-the-Opinion-Leadership-of-LLMs)
++ <a href="werewolf.pdf" style="color: var(--linkblue) !important;"> Paper and Appendix</a>
++ <a href="https://github.com/doslim/Evaluate-the-Opinion-Leadership-of-LLMs" style="color: var(--linkblue) !important;"> Code and data</a>
 
 ---
 

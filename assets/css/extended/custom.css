@@ -6,7 +6,7 @@
     text-decoration: none !important;
     border-bottom: 0 !important;
     box-shadow: none !important;
-    color: var(--linkblue) !important;
+    color: var(--linkgreen) !important;
 }
 
 
@@ -18,12 +18,12 @@
     text-decoration: none !important;
     border-bottom: none !important;
     box-shadow: none !important;
-    /* color: var(--linkblue) !important; */
+    /* color: var(--linkgreen) !important; */
 }
 
 /* 鼠标悬停效果（可选） */
 .post-meta a:hover {
-    color: var(--linkblue) !important;
+    color: var(--linkgreen) !important;
     /* text-decoration: underline !important; */
 }
 
@@ -38,14 +38,19 @@
 /* 鼠标悬停时的颜色 */
 .first-entry:hover .entry-header h2, 
 .post-entry:hover .entry-header h2 {
-    color: var(--linkblue) !important;
+    color: var(--linkgreen) !important;
+}
+
+.post-entry:hover {
+     border: 2px solid var(--linkgreen);
+     box-shadow: var(--ct-shadow);
 }
 
 
 /* 导航栏鼠标悬停时的颜色 */
 body #menu li a:hover,
 body .menu a:hover {
-    color: var(--linkblue) !important;
+    color: var(--linkgreen) !important;
     /* font-weight: 800 !important;  */
     /* 特粗，确保视觉明显 */
     text-decoration: none !important;
@@ -84,7 +89,7 @@ body .menu a:hover {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--linkblue);
+    background-color: var(--linkgreen);
     transition: width 0.3s ease-in-out;
 }
 #menu a:hover::after {
@@ -100,8 +105,8 @@ body .menu a:hover {
     border-bottom: none !important; 
 }
 #menu .active:hover {
-    color: var(--linkblue) !important;
+    color: var(--linkgreen) !important;
 }
 #menu .active:hover::after {
-    background-color: var(--linkblue) !important;
+    background-color: var(--linkgreen) !important;
 }

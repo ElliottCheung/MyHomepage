@@ -27,9 +27,12 @@ menu:
         - name: Teaching and Service
           url: service/
           weight: 6
+        - name: Gallery
+          url: gallery/
+          weight: 7
         - name: Contact
           url: contact/
-          weight: 7
+          weight: 8
         # - name: Blog
         #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
         #   weight: 6
@@ -80,6 +83,8 @@ params:
             #   url: teaching/
             - name: Teaching and Service
               url: service/
+            - name: Gallery
+              url: gallery/
             # - name: Contact
             #   url: contact/
             # - name: Archive

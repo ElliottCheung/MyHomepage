@@ -1,12 +1,11 @@
 ---
 title: "Profile"
-description: "Profile of Xiaowie Zhang."
-layout: "archives"
+description: "Profile of Xiaowei Zhang."
 ---
 
-##### Education
+<!-- ##### Education
 
 Tsinghua University
 
-Hong Kong University of Science and Technology
+Hong Kong University of Science and Technology -->
 

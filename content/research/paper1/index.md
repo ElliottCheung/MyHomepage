@@ -36,8 +36,8 @@ editPost:
 
 ##### Download
 
-+ [Paper](paper_recommender.pdf)
-+ [Online appendix](appendix_recommender.pdf)
++ <a href="paper_recommender.pdf" style="color: var(--linkblue) !important;"> Paper</a>
++ <a href="appendix_recommender.pdf" style="color: var(--linkblue) !important;"> Online appendix</a>
 <!-- + [Code and data](https://github.com/pmichaillat/feru) -->
 
 ---
