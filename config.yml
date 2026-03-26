@@ -100,14 +100,16 @@ params:
           url: contact/
         # - name: Zoom
         #   url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: contact/
+        # - name: Location
+        #   url: contact/
         # - name: Office Hours
         #   url: officehours/
         - name: LinkedIn
           url: https://www.linkedin.com/in/xiaowei-elliott-zhang-a07a851b3/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=K7uOUW0AAAAJ&hl=en
+        - name: ORCID
+          url: https://orcid.org/0009-0006-0650-5140
         - name: ResearchGate
           url: https://www.researchgate.net/profile/Xiaowei-Zhang-51?ev=hdr_xprf
         # - name: GitHub

@@ -1,3 +1,7 @@
+body {
+    font-family: "PT Sans"; letter-spacing: 0.25px;
+}
+
 /* 针对 PaperMod 的特殊修复 */
 .post-content a, 
 .post-summary a,
@@ -10,41 +14,116 @@
 }
 
 
-
-/* 针对文章元信息（作者、日期、标签等）中的链接 */
-.post-meta a,
-.post-tags a,
-.parent-post-meta a {
-    text-decoration: none !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
-    /* color: var(--linkgreen) !important; */
+/* Paper status badges */
+.paper-status {
+    display: inline-block;
+    padding: 3px 6px;
+    font-size: 0.6em;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-left: 8px;
+    margin-top: 3px;
+    vertical-align: top;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    line-height: 1.2;
+    height: fit-content;
+    align-self: flex-start;
 }
 
-/* 鼠标悬停效果（可选） */
-.post-meta a:hover {
-    color: var(--linkgreen) !important;
-    /* text-decoration: underline !important; */
+
+/* Fix for paper titles with badges */
+.entry-header h2.entry-hint-parent,
+h1.post-title.entry-hint-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
+.paper-status.published {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
 
+.paper-status.forthcoming {
+    background-color: #fff3e0;
+    color: #e6a100;
+}
 
-/* 修改文章标题的颜色 */
-/* .first-entry .entry-header h2, 
+.paper-status.working-paper {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+/* Paper list improvements */
+.post-entry {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    /* border-bottom: 1px solid var(--tertiary); */
+}
+
+.post-entry:last-child {
+    border-bottom: none;
+}
+
 .post-entry .entry-header h2 {
-    color: #002aff !important;
-} */
+    font-size: 1.15em;
+    margin-bottom: 0.3em;
+}
 
-/* 鼠标悬停时的颜色 */
+/* 修改block大小 */
+.post-entry {
+    /* width: 110%;  */
+    /* transform: translateX(-10%); */
+}
+
+/* 修改文章标题 */
+.first-entry .entry-header h2, 
+.post-entry .entry-header h2 {
+    /* color: #002aff !important; */
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .first-entry:hover .entry-header h2, 
-.post-entry:hover .entry-header h2 {
+.post-entry:hover .entry-header h2{
     color: var(--linkgreen) !important;
 }
 
-.post-entry:hover {
-     border: 2px solid var(--linkgreen);
-     box-shadow: var(--ct-shadow);
+
+/* 修改文章摘要 */
+.entry-content {
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #212121;
+    font-weight: 300;
 }
+
+
+
+/* 修改文章meta */
+.first-entry .entry-footer, 
+.post-entry .entry-footer {
+    /* color: #002aff !important; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.first-entry:hover .entry-footer, 
+.post-entry:hover .entry-footer{
+    color: var(--linkgreen) !important;
+}
+.post-entry:hover {
+    border: 2px solid var(--linkgreen);
+    /* box-shadow: var(--ct-shadow); */
+}
+
+
+
+
+
+
+
 
 
 /* 导航栏鼠标悬停时的颜色 */
@@ -77,7 +156,7 @@ body .menu a:hover {
     transition: color 0.3s ease;
     position: relative !important;
     text-decoration: none !important;
-    line-height: 40px !important; /* 减小行高，这是缩减间距的关键 */
+    line-height: 35px !important; /* 减小行高，这是缩减间距的关键 */
     padding: 0 5px !important;    /* 左右留间距，上下设为0 */
     margin-top: 5px !important;  /* 整体微调位置 */
     margin-bottom: 5px !important;  /* 整体微调位置 */
@@ -109,4 +188,23 @@ body .menu a:hover {
 }
 #menu .active:hover::after {
     background-color: var(--linkgreen) !important;
+}
+
+
+
+/* 针对文章元信息（作者、日期、标签等）中的链接 */
+.post-meta a,
+.post-tags a,
+.parent-post-meta a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    /* color: var(--linkgreen) !important; */
+}
+
+/* 鼠标悬停效果（可选） */
+.post-meta a:hover {
+    color: var(--linkgreen) !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
 }
