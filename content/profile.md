@@ -9,7 +9,7 @@ layout: "profile"
     Curriculum Vitae
 </div>
 
-## Education
+## {{<icon "education" 19>}} &nbsp; Education
 
 {{<profile_block title="Tsinghua University" location="Beijing, China" date="2021-Present" sub="Ph.D. in Management Science and Engineering (Information Systems)">}}
 + Advisor: <a style="color:  var(--linkblue);" href="https://www.sem.tsinghua.edu.cn/info/1210/31859.htm"> Zhijie Lin</a>
@@ -32,7 +32,7 @@ layout: "profile"
 <br>
 
 
-## Publication and Working Paper
+## {{<icon "file" 19>}}  &nbsp; Publication and Working Paper
 
 #### Journal Publication
 
@@ -138,7 +138,7 @@ layout: "profile"
 
 <br>
 
-## Selected Honors and Awards
+## {{<icon "award" 19>}}  &nbsp; Selected Honors and Awards
 
 {{<award_grid>}}
     {{<award_block title="Weimin Zheng Scholarship" source="Tsinghua University" date="2026" >}}

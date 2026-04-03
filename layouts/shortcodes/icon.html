@@ -1,0 +1,7 @@
+{{ $name := .Get 0 }}
+{{ $size := .Get 1 | default "14" }}
+{{ $color := .Get 2 | default "currentColor" }}
+
+<span style="display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; width: {{ $size }}px; height: {{ $size }}px; color: {{ $color }};">
+    {{ partial "svg.html" (dict "name" $name) }}
+</span>

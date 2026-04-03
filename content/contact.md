@@ -138,8 +138,9 @@ html:has(head link[rel="canonical"][href*="/contact"]) .ct-label{
 display:flex;
 align-items:center;
 gap:.55rem;
-font-weight: 600;
-letter-spacing: .02em;
+font-weight: 700;
+font-size: 16px;
+/* letter-spacing: .02em; */
 color: var(--linkgreen);
 margin: 0 0 .6rem;
 }
