@@ -11,6 +11,9 @@ description: "Xiaowei Zhang's mailing and office addresses."
 CONTACT — page-scoped styling (matches your editorial theme)
 ========================================================= */
 
+body{
+  background-color: var(--code-bg);
+}
 /* Turn OFF your global editorial left rail ONLY on /contact/ */
 html:has(head link[rel="canonical"][href*="/contact"]) .post-content{
 border-left: none !important;
