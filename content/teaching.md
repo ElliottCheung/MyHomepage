@@ -55,7 +55,7 @@ layout: "profile"
 {{<profile_teaching_block 
     title="Artificial Intelligence and Industrial Upgrading" 
     level="MBA" 
-    location="Tsinghua University" 
+    location="Tsinghua University (Shenzhen)" 
     role="Teaching Assistant (Sole)"
     instructor="Yujie Zhu" 
     time="Fall 2025" 

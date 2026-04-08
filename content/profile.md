@@ -79,9 +79,20 @@ layout: "profile"
     volume="35"
     issue="1"
     pages="3-16"
-    level="FMS-T1;NFSC-A"
+    level="FMS-T1;NFSC-A;Lead Article"
     author="Yi Wu, <span class='special-author'>Xiaowei Zhang</span>, Zhijie Lin"
+    display_back="1"
+    title-back="共享住宿房东放弃筛选房客的动因：基于行业内竞争"
+    status-back="published"
+    year-back="2022"
+    source-back="管理科学"
+    volume-back="35"
+    issue-back="1"
+    pages-back="3-16"
+    level-back="FMS-T1;NFSC-A;Lead Article"
+    author-back="吴懿, <span class='special-author'>张啸威</span>, 林志杰"
     >}}
+<!-- inner-back="[Paper Link](https://glkx.hit.edu.cn/__local/4/75/D7/16432A2FE6EB426CC8E5FD425A8_CDC50C5D_F8161.pdf)" -->
 {{</profile_paper_block>}}
 
 
